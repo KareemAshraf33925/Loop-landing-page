@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: "Josefin Sans","Alata", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --DarkGray: hsl(0, 0%, 55%);
+    --VeryDarkGray: hsl(0, 0%, 41%);
+}
+/* start-header */
+header{
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center/center;
+    height: 100vh;
+}
+header .container{
+    padding: 50px 100px;
+}
+header .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container nav .items{
+    list-style: none;
+}
+header .container nav .items .item{
+    display: inline-block;
+    margin-right: 30px;
+}
+header .container nav .items .item a{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Alata";
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--White);
+}
+header .container nav .icon-hamburger{
+    display: none;
+}
+header .container nav .icon-close{
+    display: none;
+}
+header .container h1{
+    display: inline-block;
+    font-family:"Josefin Sans";
+    font-weight: 400;
+    font-size: 70px;
+    color: var(--White);
+    border: 1px solid var(--White);
+    width: 550px;
+    padding: 30px 0 30px 50px;
+    margin-top: 150px;
+}
+
+
+/* end-header */
+/* start-main */
+main .container{
+    padding: 100px 0px 100px 100px;
+}
+main .container .interactive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container .interactive .info{
+    position: relative;
+    top: 107px;
+    right: 159px;
+    background-color: var(--White);
+    width: 555px;
+    height: 450px;
+}
+main .container .interactive .info h2{
+    display: inline-block;
+    font-family:"Alata";
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--Black);
+    margin: 40px 67px 0px 70px;
+}
+main .container .interactive .info p{
+    font-family: "Alata";
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--DarkGray);
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 40px  0 40px 70px;
+}
+/* end-main */
+/* start-gallary */
+.gallary .container{
+    padding: 100px 100px 100px 100px;
+}
+.gallary .container h3{
+    display: inline-block;
+    font-family:"Alata";
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--Black);
+    text-transform: uppercase;
+}
+.gallary .container .see_all{
+    font-family: "Alata";
+    background: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--DarkGray);
+    border: none;
+    outline: none;
+    border: 2px solid var(--DarkGray);
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 20px;
+    float:right;
+}
+.gallary .container .our-creator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 100px 0;
+}
+.gallary .container .our-creator .item{
+    position: relative;
+}
+.gallary .container .our-creator .item picture img{
+    object-fit: cover;
+}
+.gallary .container .our-creator .item p{
+    font-family: "Alata";
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    bottom:40px;
+    left:30px;
+    color: var(--White);
+    text-transform: uppercase;
+}
+
+
+/* end-gallary */
+/* start-footer */
+footer{
+    background-color: var(--Black);
+}
+footer .container{
+    padding: 50px 100px;
+}
+footer .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .row .items{
+    list-style: none;
+}
+footer .container .row .items .item{
+    display: inline-block;
+    margin-right: 30px;
+}
+footer .container .row .items .item a{
+    text-decoration: none;
+    cursor: pointer;
+}
+footer .container .row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 0;
+}
+footer .container .row_1 .items{
+    list-style: none;
+}
+
+footer .container .row_1 .items .item {
+    font-family: "Alata";
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--White);
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+footer .container .row_1 p{
+    font-family: "Alata";
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--DarkGray);
+}
+/* end-footer */
+@media(max-width:768px){
+    header {
+        height: 50vh;
+      }
+    header .container nav .items .item {
+        margin-right: 15px;
+      }
+      main .container .interactive {
+        flex-direction: column;
+      }
+      main .container {
+        padding: 100px 0px 100px 0px;
+      }
+      main .container .interactive .info {
+        right: 0;
+        text-align: center;
+      }
+      footer .container .row_1 .items .item {
+        margin-right: 8px;
+      }
+}
+@media(max-width:480px){
+    header .container {
+        padding: 0;
+      }
+      header .container nav {
+        height: 50vh;
+        width: 480px;
+        padding: 30px;
+        position: absolute;
+        align-items: flex-start;
+        transition: all 0.6s;
+      }
+      header .container nav .items .item {
+        display: block;
+        margin-top:20px;
+        position: relative;
+        top: 150px;
+        right: 245px;
+        opacity: 0;
+        transition: all 0.6s;
+      }
+      header .container nav .items .item a {
+        font-size: 25px;
+      }
+      header .container nav .icon-hamburger {
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: all 0.6s;
+      }
+      header .container nav .icon-close {
+        margin-top: 10px;
+        cursor: pointer;
+        transition: all 0.6s;
+      }
+      header .container h1 {
+        width: 460px;
+        padding: 30px 0 30px 24px;
+        margin-left: 13px;
+      }
+      
+      main .container .interactive picture img{
+        width: 480px;
+      }
+      main .container .interactive .info {
+        width: 460px;
+        right: 30px;
+      }
+      .gallary .container {
+        padding: 20px 20px 0px 20px;
+      }
+      .gallary .container .our-creator .item picture img {
+        width: 100%;
+      }
+      footer .container .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:0px;
+      }
+      
+      footer .container .row_1 .items .item {
+        display: block;
+       margin: 15px 13px 18px 0;
+       
+      }
+      footer .container .row .items {
+        list-style: none;
+        position: relative;
+        top: 270px;
+      }
+      footer .container .row_1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 0;
+        flex-direction: column;
+        gap: 40px;
+      }
+}
+@media(max-width:375px){
+    header .container nav {
+        width: 375px;
+      }
+      header .container nav .items .item {
+        right: 194px;
+      }
+      header .container h1 {
+        width: 345px;
+        padding: 30px 10px 30px 7px;
+        margin-left: 23px;
+       font-size: 64px;
+      }
+      main .container .interactive picture img {
+        width:375px;
+      }
+      main .container .interactive .info h2 {
+        margin: 40px 14px 0px 70px;
+      }
+      main .container .interactive .info p {
+        margin: 40px 14px 40px 81px;
+      }
+      .gallary .container {
+        position: relative;
+      }
+      .gallary .container .see_all {
+        position: absolute;
+        bottom: -66px;
+        right: 130px;
+      }
+      footer .container .row .items .item {
+        margin-right: 10px;
+      }
+      footer .container .row_1 p {
+        font-size: 10px;
+      }
+}
+@media(max-width:320px){
+    header .container nav .logo{
+        width: 130px;
+       margin-top: 10px;
+    }
+    header .container nav {
+        width: 320px;
+      }
+      header .container nav .items .item {
+        right: 131px;
+      }
+      header .container h1 {
+        width: 310px;
+        padding: 30px 10px 30px 7px;
+        margin-left: 5px;
+        font-size: 57px;
+      }
+      main .container .interactive picture img {
+        width: 320px;
+      }
+      main .container .interactive .info p {
+        margin: 40px 65px 40px 118px;
+    }
+    .gallary .container h3 {
+        font-size: 35px;
+      }
+      .gallary .container .see_all {
+        right: 106px;
+      }
+      footer .container .row .items .item {
+        margin-right: 2px;
+      }
+      footer .container .row_1 p {
+        font-size: 13px;
+        text-align: center;
+      }
+      footer .container .row .items .item a img{
+        width:18px
+      }
+      footer .container .row img{
+        width: 150px;
+      }
+}
